@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector Game</title>
+    <!-- Stylesheets & Bootstrap CDN -->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- javascript -->
+	<script src="assets/javascript/game.js"></script>
+
+</head>
+<body>
+
+  <!-- Overall Bootstrap Grid -->
+<div class="container">
+
+    <!-- Jumbotron with Title -->
+    <div class="jumbotron">
+      <h1 class="text-center"><strong>Gems On JQuery</strong></h1>
+    </div>
+
+    <div class="row 1" id="instructions">
+		<p id="instructions2">Instructions: </p> <p>You will be shown a random number at the start of the game.</p>
+		<p>By clicking on a gem, you will add a specific amount of points to your Current Total.</p>
+		<p>The goal is to match your Current Total to the Random Number.  You will lose if you go over.</p>
+		<p>The value of each crystal is hidden from you until you click on it.</p>
+
+	</div>
+
+    <div class="row">
+		<div class="col-sm-6">
+			<div class="panel panel-default">
+          		<div class="panel-heading">
+           			<h5 class="panel-title">Current Number:</h5>
+          		</div>
+          		<div class="panel-body">
+            		<div class="text-center">
+           				<h3 id="currentNumberSpot">0</h3>
+            		</div>
+          		</div>
+        	</div>
+		</div>
+    <div class="col-sm-6">
+			<div class="panel panel-default">
+          		<div class="panel-heading">
+           			<h5 class="panel-title">Target Number:</h5>
+          		</div>
+          		<div class="panel-body">
+            		<div class="text-center">
+           				<h3 id="targetNumber">0</h3>
+            		</div>
+          		</div>
+        	</div>
+		</div>
+	<div class="row">
+		<div class="col-sm-4" id="wins">
+			<div class="panel panel-default">
+	          	<div class="panel-heading">
+	           		<h5 class="panel-title"><p id="winCount">Wins: 0</p></h5>
+	          	</div>
+	        </div>
+		</div>
+		<div class="col-sm-4" id="Losses">
+			<div class="panel panel-default">
+	          	<div class="panel-heading">
+	           		<h5 class="panel-title"><p id="lossCount">Losses: 0</p></h5>
+	          	</div>
+	        </div>
+		</div>
+		<div class="col-sm-4">
+		<button type="button" class="btn-lg btn-primary" id="resetButton">Play Again</button>
+		</div>
+	</div>
+
+	<div class="row" align="center">
+			<img class="gem" id="gem1"  value="" src="assets/images/gem1.png" alt="gem">
+			<img class="gem" id="gem2"  value="" src="assets/images/gem2.png" alt="gem">
+			<img class="gem" id="gem3"  value="" src="assets/images/gem3.jpg" alt="gem">
+			<img class="gem" id="gem4"  value="" src="assets/images/gem4.png" alt="gem">
+		
+	</div>
+
+
+</div>
+
+	<script src='game.js'></script>   
+</body> 
+</html>
+
+
+
+ 
+ 
